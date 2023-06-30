@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/testcode
+    username: postgres
+    password: abcd1234
+  sql:
+    init:
+      mode: always
+
+mybatis:
+  type-aliases-package: handson.testcode.domain
+  configuration:
+    map-underscore-to-camel-case: true
+
+logging:
+  level:
+    handson.testcode.repository: trace
